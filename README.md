@@ -36,7 +36,6 @@
   ExpiresByType text/javascript "access plus 1 year
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType application/x-javascript "access plus 1 year"
-
 </ifModule>
 
 <IfModule mod_deflate.c>
@@ -63,5 +62,10 @@
   AddOutputFilterByType DEFLATE font/ttf
   AddOutputFilterByType DEFLATE font/otf
   AddOutputFilterByType DEFLATE font/opentype
+
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
 </IfModule>
 ```
