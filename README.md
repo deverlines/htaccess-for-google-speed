@@ -29,7 +29,7 @@
   ExpiresByType application/x-font-ttf "access plus 1 year"
   ExpiresByType application/x-font-truetype "access plus 1 year"
   ExpiresByType application/x-font-otf "access plus 1 year"
-    ExpiresByType application/x-font-woff "access plus 1 year"
+  ExpiresByType application/x-font-woff "access plus 1 year"
   ExpiresByType application/x-font-woff2 "access plus 1 year"
 
   ExpiresByType text/css "access plus 1 year"
